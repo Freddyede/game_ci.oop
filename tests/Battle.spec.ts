@@ -18,8 +18,9 @@ describe('Battle test', () => {
         expect(player.hp).toEqual(player.hp - number);
     });
     it('should should monster attack', async () => {
-        randomNumberMock(monster.attack.length);
+        const number = randomNumberMock(monster.attack.length);
+        console.log(number);
         await battle.monsterAttack();
-        expect(player.hp).toEqual(player.hp - randomNumberMock(monster.attack.length));
+        expect(player.hp).toEqual(player.hp - number);
     });
 });
