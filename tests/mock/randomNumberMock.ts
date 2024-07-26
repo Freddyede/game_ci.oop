@@ -1,1 +1,1 @@
-export let randomNumberMock = jest.fn((max: number) => Math.floor(Math.random() * Math.floor(max)));
+export let randomNumberMock = jest.fn((max: number): number => Math.floor(Math.random() * Math.floor(max)));
