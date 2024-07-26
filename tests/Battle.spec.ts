@@ -12,12 +12,12 @@ describe('Battle test', () => {
         await battle.selectAttack();
         expect(monster.hp).toEqual(60);
     });
-    it('should should monster attack', async () => {
+    it('should monster attack', async () => {
         const number = randomNumberMock(monster.attack.length - 1);
         await battle.monsterAttack();
         expect(player.hp).toEqual(player.hp - number);
     });
-    it('should should monster attack', async () => {
+    it('should monster attack', async () => {
         const number = randomNumberMock(monster.attack.length);
         await battle.monsterAttack();
         expect(player.hp).toEqual(player.hp - number);
